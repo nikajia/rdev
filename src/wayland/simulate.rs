@@ -9,7 +9,7 @@ use uinput::event::keyboard::Key as EvdevKey;
 // use Option<Device> instead
 lazy_static::lazy_static! {
     pub static ref DEVICE: Mutex<Device> = Mutex::new(uinput::default().unwrap()
-    .name("rustdesk").unwrap()
+    .name("AccessPro").unwrap()
     .event(uinput::event::Keyboard::All).unwrap()
     .create().unwrap());
 }
